@@ -13,7 +13,9 @@ This project extracts **company names**, **emails**, and **websites (if availabl
 
 ### Install Dependencies
 
-bash ```pip install selenium openpyxl ```
+```bash
+pip install selenium openpyxl
+
 
 Also install the correct WebDriver (e.g., ChromeDriver) and ensure it’s in your system PATH.
 
