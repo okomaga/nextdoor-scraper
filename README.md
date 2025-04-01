@@ -9,16 +9,6 @@ This project extracts **company names**, **emails**, and **websites (if availabl
 - Regular Expressions (`re`)  
 - openpyxl (for Excel output)
 
-## Project Structure
-
-nextdoor-scraper/
-├── README.md
-├── scraper.py
-├── data/
-│   └── nextdoor_urls.xlsx
-└── output/
-└── nextdoor_data.xlsx
-
 ## How to Run
 
 ### Install Dependencies
