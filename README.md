@@ -2,6 +2,9 @@
 
 This project extracts **company names**, **emails**, and **websites (if available)** from 100 business pages on [Nextdoor.com](https://nextdoor.com). The scraped data is saved into an Excel file using Python and Selenium.
 
+> ⚠️ **Note:** Nextdoor may block your IP address if you send too many requests in a short time. It's highly recommended to use a VPN or proxy to avoid rate-limiting or being blocked during scraping.
+
+
 ## Tech Stack
 
 - Python  
