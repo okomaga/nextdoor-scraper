@@ -1,49 +1,40 @@
-nextdoor-scraper
+# nextdoor-scraper
 
-This project extracts company names, emails, and websites (if available) from 100 business pages on Nextdoor.com. The scraped data is saved into an Excel file using Python and Selenium.
+This project extracts **company names**, **emails**, and **websites (if available)** from 100 business pages on [Nextdoor.com](https://nextdoor.com). The scraped data is saved into an Excel file using Python and Selenium.
 
-Tech Stack
-	•	Python
-	•	Selenium (for web automation)
-	•	Regular Expressions (re)
-	•	openpyxl (for Excel output)
+## Tech Stack
 
-Project Structure
+- Python  
+- Selenium (for web automation)  
+- Regular Expressions (`re`)  
+- openpyxl (for Excel output)
 
-nextdoor-scraper/  
-├── README.md  
-├── scraper.py  
-├── data/  
-│   └── nextdoor_urls.xlsx  
-└── output/  
-    └── nextdoor_data.xlsx
+## Project Structure
 
-How to Run
+nextdoor-scraper/
+├── README.md
+├── scraper.py
+├── data/
+│   └── nextdoor_urls.xlsx
+└── output/
+└── nextdoor_data.xlsx
 
-1. Clone the Repository
+## How to Run
 
-git clone https://github.com/okomaga/nextdoor-scraper.git  
-cd nextdoor-scraper
+### Install Dependencies
 
-2. Install Dependencies
-
-pip install selenium openpyxl
+bash ```pip install selenium openpyxl ```
 
 Also install the correct WebDriver (e.g., ChromeDriver) and ensure it’s in your system PATH.
 
-3. Prepare Input File
+Prepare Input File
 
 Add your 100 Nextdoor URLs (one per row) into:
 
 data/nextdoor_urls.xlsx
 
-4. Run the Script
-
-python scraper.py
-
-Scraped data will be saved into:
-
-output/nextdoor_data.xlsx
+Run the Script
+nextdoor_data_scraper.py
 
 Output Columns
 	•	Company Name
@@ -54,3 +45,4 @@ Output Columns
 License
 
 This project is licensed under the MIT License.
+
