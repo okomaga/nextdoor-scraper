@@ -26,8 +26,9 @@ Add your 100 Nextdoor URLs (one per row) into:
 data/nextdoor_urls.xlsx
 
 Run the Script
+```
 nextdoor_data_scraper.py
-
+```
 Output Columns
 	•	Company Name
 	•	Email (if found)
