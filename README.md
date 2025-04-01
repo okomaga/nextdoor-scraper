@@ -1,67 +1,56 @@
-# nextdoor-scraper
+nextdoor-scraper
 
-This project extracts **company names**, **emails**, and **websites (if available)** from 100 business pages on [Nextdoor.com](https://nextdoor.com). The scraped data is saved into an Excel file.
+This project extracts company names, emails, and websites (if available) from 100 business pages on Nextdoor.com. The scraped data is saved into an Excel file using Python and Selenium.
 
-## 🧰 Tech Stack
+Tech Stack
+	•	Python
+	•	Selenium (for web automation)
+	•	Regular Expressions (re)
+	•	openpyxl (for Excel output)
 
-- Python
-- Selenium (for web automation)
-- Regular Expressions (`re`)
-- `openpyxl` (for Excel output)
+Project Structure
 
-## 📁 Project Structure
+nextdoor-scraper/  
+├── README.md  
+├── scraper.py  
+├── data/  
+│   └── nextdoor_urls.xlsx  
+└── output/  
+    └── nextdoor_data.xlsx
 
-nextdoor-scraper/
-│
-├── README.md
-├── requirements.txt
-├── scraper.py
-│
-├── data/
-│   └── nextdoor_urls.xlsx
-│
-├── output/
-│   └── nextdoor_data.xlsx
+How to Run
 
-## 🚀 How to Run
+1. Clone the Repository
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/okomaga/nextdoor-scraper.git
+git clone https://github.com/okomaga/nextdoor-scraper.git  
 cd nextdoor-scraper
 
 2. Install Dependencies
 
-pip install -r requirements.txt
+pip install selenium openpyxl
 
-Required libraries:
-	•	selenium
-	•	openpyxl
-
-Also install the correct WebDriver (e.g., ChromeDriver) and make sure it’s in your system PATH.
+Also install the correct WebDriver (e.g., ChromeDriver) and ensure it’s in your system PATH.
 
 3. Prepare Input File
 
-Add your 100 Nextdoor URLs into:
+Add your 100 Nextdoor URLs (one per row) into:
 
 data/nextdoor_urls.xlsx
-
-One URL per row.
 
 4. Run the Script
 
 python scraper.py
 
-Scraped data will be saved to:
+Scraped data will be saved into:
 
 output/nextdoor_data.xlsx
 
-📝 Output Columns
+Output Columns
 	•	Company Name
 	•	Email (if found)
 	•	Website (if listed)
 	•	Source URL
 
-📄 License
+License
 
 This project is licensed under the MIT License.
