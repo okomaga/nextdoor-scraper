@@ -26,7 +26,7 @@ Add your 100 Nextdoor URLs (one per row) into:
 data/nextdoor_urls.xlsx
 
 Run the Script
-```
+``` bash
 nextdoor_data_scraper.py
 ```
 Output Columns
